@@ -11,31 +11,7 @@ args = commandArgs(trailingOnly=TRUE)
 
 #@Author: Samson Jacob 1.14.2018
 #Purpose: Take the results of the David Outfile and flatten the genes associated with an ontology
-#Source for the Coded file is from Cronstein2.R
 
-######################################################################### Attain the Up and Down regulated Genes
-
-#find the coded output
-#file1 = list.files(".",pattern = "DESEQ_CODED_mouse.txt")
-
-#load the coded file 
-#df_coded = read.table(file1[1],sep='\t',header=TRUE)
-
-#UP regulated genes
-#Up = subset(df_coded,df_coded$VAL=='UP')
-#Dw = subset(df_coded,df_coded$VAL=='DOWN')
-
-#write_out
-#write.table(Dw,'Down_Mouse.txt',sep = '\t',row.names = TRUE,quote = FALSE)
-#write.table(Up,'UP_Mouse.txt',sep='\t',row.names=TRUE,quote = FALSE)
-
-#rm(list=ls())
-
-############################################################################# Explode DAVID Output
-
-#load the path of the results from DAVID analysis
-#downDAVIDpth = './Downloads/Down_DavidResults.txt'
-#downKEGGpth = './Downloads/KEGG_DOWN_mouse.txt'
 
 #column headings to keep 
 keepcols = c('Term','Count','PValue','Genes','FDR')
